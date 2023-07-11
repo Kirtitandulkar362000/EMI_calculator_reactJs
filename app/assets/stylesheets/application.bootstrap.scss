@@ -1,5 +1,39 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
-#Card{
-    width: 18rem;
+
+#Container{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    display: inline-block;
+    position: relative;
+}
+.title:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0%;
+    left: 0%;
+    background-color: #0087ca ;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.title:hover:after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#Row1{
+display: contents;
+}
+#Row2{
+    display: flex;
+justify-content: space-between;
+}
+#Border{
+    text-align: center;
+    border-style: dashed;
 }
